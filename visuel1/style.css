@@ -1,0 +1,20 @@
+.inscrire{
+	font-family: Padauk, sans-serif;
+	font-weight: bold;
+	color:#93A734;
+	background-color: white;
+	border-radius: 10px;
+	border: 2px solid #93A734;
+	font-size: 2em;
+	padding:0.1em;
+	padding-left:0.8em;
+	padding-right: 0.8em;
+	margin-right: 0.3em;
+}
+
+.inscrire:hover{
+	color:white;
+	background-color: #B0C748;
+	cursor:pointer;
+	border:2px solid transparent;
+}
