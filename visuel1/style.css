@@ -1,3 +1,9 @@
+.boutons{
+	display: flex;
+	justify-content: center;
+	padding:5em;
+}
+
 .inscrire{
 	font-family: Padauk, sans-serif;
 	font-weight: bold;
@@ -10,6 +16,7 @@
 	padding-left:0.8em;
 	padding-right: 0.8em;
 	margin-right: 0.3em;
+	align-items: center;
 }
 
 .inscrire:hover{
