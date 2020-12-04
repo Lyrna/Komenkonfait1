@@ -1,0 +1,62 @@
+@font-face
+{
+	font-family:'Jost*';
+	src: url('../font/OpenType/Jost-300-Light.otf') format('otf');
+	src: url('../font/Jost-300-Light.ttf') format('truetype');
+	src: url('../font/OpenType/Jost-400-Book.otf') format('otf');
+	src: url('../font/Jost-400-Book.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: Tabarra;
+	src: url('../font/tabarra/TabarraPro-Black-FFP.ttf') format('truetype');
+}
+
+body{
+	font-family: 'Jost*', sans-serif;
+}
+
+header{
+	background-color: #3DDA98;
+	color: white;
+	padding-top:3%;
+	padding-bottom:10%;
+	justify-content: center;
+	font-weight: bold;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+}
+
+h1{
+	font-size: 5em;
+	font-weight: bold;
+	font-family: Tabarra, sans-serif;
+}
+
+hr{
+	color:#3DDA98;
+	width:3em;
+	border:4px solid;
+	margin-left: 0;
+}
+
+/*cartes*/
+
+.card{
+	padding-top:1.6em;
+	padding-bottom:1.2em;
+	margin-top:-20%;
+}
+
+.card-title{
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+.card-text{
+	font-size: 1.3em;
+	color: #2A322E;
+}
