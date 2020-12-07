@@ -60,3 +60,10 @@ hr{
 	font-size: 1.3em;
 	color: #2A322E;
 }
+
+@media screen and (max-width: 1000px){
+	.card{
+		margin:0;
+		margin-top: 5%;
+	}
+}
