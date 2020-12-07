@@ -1,0 +1,31 @@
+@font-face{
+	font-family: 'Cabrion';
+	src: url(../font/cabrion.ttf);
+}
+
+body{
+	background-image: url('../img/fond.jpg');
+	background-position: contain;
+	color:white;
+	font-family: 'Cabrion';
+}
+
+.touchid{
+	margin-top: 15%;
+}
+h1{
+	font-weight: bold;
+	font-size: 1.9em;
+	letter-spacing: 0.05em;
+}
+
+.itunes{
+	color:grey;
+}
+
+hr{
+	background-color:grey;
+}
+.switch{
+	font-weight: bold;
+}
