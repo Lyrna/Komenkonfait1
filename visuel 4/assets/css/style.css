@@ -51,6 +51,14 @@ button{
 	padding-top: 0.7em;
 	padding-bottom: 0.7em;
 }
+a{
+	color:white;
+}
+
+a:hover{
+	color:white;
+	text-decoration: none;
+}
 
 button:hover{
 	background-color: #BB3722;

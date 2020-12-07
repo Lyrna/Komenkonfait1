@@ -1,0 +1,62 @@
+@font-face{
+	font-family: 'Newyork';
+	src: url(../font/NewYorker/NY.ttf) format('truetype');
+}
+
+@font-face{
+	font-family: 'nyi';
+	src: url(../font/NewYorker/ACaslonPro-Italic.otf);
+}
+
+@font-face{
+	font-family: 'Jost*';
+	src: url(../font/Jost/Jost-400-Book.ttf);
+}
+
+@font-face{
+	font-family: 'nyr';
+	src: url(../font/NewYorker/ACaslonPro-Regular.otf);
+}
+
+h1{
+	font-family: 'Newyork';
+	font-size: 6em;
+}
+
+.italic{
+	font-family: 'nyi';
+	font-style: italic;
+	font-size:2.3em;
+}
+
+.photo{
+	height:5em;
+	width: auto;
+	border-radius:60px;
+}
+
+.by{
+	font-family: 'Jost*';
+	font-size: 1.5em;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	margin-top:1.5em;
+	margin-left:1%;
+}
+
+hr{
+	background-color:#E0E2E5;
+	margin-bottom: 5%;
+}
+
+.plettrine{ /* Je veux que la première lettre de mes paragraphes... */    
+	font-family:'nyr';
+	font-size:2.2em;
+}
+
+.lettrine{
+	float:left;
+	font-size:2.7em;
+	margin-right:1%;
+	margin-top:-1%;
+}
