@@ -1,0 +1,252 @@
+@font-face{
+	font-family: 'Tolyer';
+	src: url(../font/Tolyer.ttf) format('truetype');
+}
+
+@font-face{
+	font-family: 'Akrobat';
+	src: url(../font/AkrobatBlack.otf);
+}
+
+@font-face{
+	font-family: 'Cabrion';
+	src: url(../font/cabrion.ttf);
+}
+
+/*arrière plan du fond du site*/
+
+body{
+	background-color:#2B3B3B;
+}
+
+.carousel{
+	background-image:url('../img/fond.jpg');
+	background-size: cover;
+	font-family: 'Cabrion';
+	box-shadow: 0 10px 10px 0px #283333;
+}
+
+/*Barre de navigation*/
+.nav{
+	background-color: #2b2d2a;
+}
+
+/*shinola*/
+.navbar-brand{
+	border-left:1px solid #373934;
+	border-right: 1px solid #373934;
+	padding:20px;
+	padding-left:1.5em;
+	padding-right: 1.5em;
+	align-self: center;
+}
+
+.navbar-brand:hover{
+	opacity: 0.8;
+}
+
+.logo{
+	width:9em;
+}
+
+/*liens principaux blancs*/
+.nav-link{
+	color:white !important;
+	line-height: 1em;
+}
+
+.nav-link:hover{
+	color : #A0F3F6 !important;
+}
+
+.nav-item{
+	font-family: 'Akrobat';
+	color:white;
+	font-size:1.6em;
+	text-align: center;
+	margin-left:0.5em;
+	margin-right: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/*texte en gris au dessus*/
+.read{
+	font-family: 'Freemono';
+	font-size:0.5em;
+	font-weight: bold;
+	color: #797c75;
+}
+
+/*réseaux sociaux dans la nav*/
+
+/*images des réseaux*/
+
+.newsletter{
+	color:white;
+	font-size:0.8em;
+	font-family: "Akrobat";
+	text-transform: uppercase;
+	display:block;
+	margin-top:-9px;
+	margin-bottom:2.5em;
+}
+.rs{
+	height: 1.5em;
+	width: 1.5em;
+	float: right;
+}
+
+.rs:hover{
+	opacity: 0.8;
+}
+
+/*CAROUSEL*/
+
+.image{
+	margin-left:11%;
+	width: 78%;
+	border-left: 4px solid white;
+	border-right: 4px solid white;
+}
+
+/*zone de texte du carousel*/
+
+.zonetextcarousel{
+	text-align: left;
+	width: 30%;
+}
+
+.description, .textimportant{
+	font-family: 'Akrobat';
+	text-transform: uppercase;
+
+}
+
+.textimportant{
+	font-size:3em;
+	line-height: 1em;
+}
+
+hr{
+	background-color: lightgrey;
+	margin:10px;
+	margin-top:-10px;
+}
+ .learnmore{
+ 	background-image: url(../img/flecheorange.png);
+ 	background-size: 100% 100%;
+ 	background-repeat: no-repeat;
+ 	background-color: transparent;
+ 	color:white;
+ 	border:none;
+ 	text-transform: uppercase;
+ 	padding:0.6em;
+ 	padding-left:1.5em;
+ 	padding-right: 3em;
+ 	font-weight: bold;
+ 	font-size:0.9em;
+ }
+
+ .learnmore:hover{
+ 	opacity: 0.8;
+ }
+
+/*flèches carousel*/
+.carousel-control-prev, .carousel-control-next{
+	opacity:1;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+	opacity:0.8;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon { 
+    height: 8em; 
+    width: 3em;
+} 
+
+.carousel-control-prev-icon {
+	background-image: url("../img/flecheprev.png") !important;
+}
+
+.carousel-control-next-icon {
+	background-image: url("../img/flechenext.png") !important;
+}
+
+@media (max-width: 992px){
+
+	.textimportant{
+	font-size:1.5em;
+	}
+
+	.newsletter{
+		margin:5px;
+		margin-top:10px;
+		font-size:1.5em;
+	}
+	.rs{
+		float:left;
+		height:3em;
+		width: 3em;
+	}
+}
+
+@media(max-width: 650px){
+
+	.zonetextcarousel{
+	margin-bottom:-20px;
+}
+
+	.description{
+		font-size:0.7em;
+	}
+
+	.textimportant{
+	font-size:0.9em;
+	}
+
+	.readmore{
+		display:none;
+	}
+
+	.learnmore{
+	font-size:0.6em;
+	}
+
+	.carousel-control-prev-icon, .carousel-control-next-icon { 
+    height: 5em; 
+    width: 2em;
+	} 
+}
+
+@media(max-width: 350px){
+
+	.zonetextcarousel{
+	margin-bottom:-25px;
+}
+
+	.description{
+		font-size:0.7em;
+	}
+
+	.textimportant{
+	font-size:0.9em;
+	}
+
+	.readmore{
+		display:none;
+	}
+
+	.learnmore{
+	font-size:0.4em;
+	}
+
+	hr{
+		display: none;
+	}
+	.carousel-control-prev-icon, .carousel-control-next-icon { 
+    height: 4em; 
+    width: 2em;
+	} 
+}
