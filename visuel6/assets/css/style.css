@@ -3,11 +3,23 @@
 	src: url(../font/cabrion.ttf);
 }
 
+@font-face{
+	font-family: 'jost';
+	src: url(../font/Jost-400-Book.ttf);
+}
+
 body{
 	background-image: url('../img/fond.jpg');
-	background-position: contain;
+	background-size: cover;
 	color:white;
 	font-family: 'Cabrion';
+}
+
+.container{
+	width:450px;
+	float:right;
+	margin-top: 7em;
+	margin-right:5em;
 }
 
 .touchid{
@@ -20,31 +32,38 @@ h1{
 }
 
 .itunes{
+	font-family: 'jost';
 	color:grey;
 }
 
+p{
+	line-height: 25px;
+}
+
 hr{
-	background-color:grey;
+	border: 1px solid grey;
 }
 .switch{
 	font-weight: bold;
-	font-size: 1.1em;
 }
 
 .plus{
 	float:right;
+	position: relative;
+	font-size: 1.5em;
+	font-weight: normal;
 }
 
 /*SLIDESHOW*/
 
 /* Slideshow container */
-.slideshow-container {
+.para-container {
   position: relative;
+
 }
 
 /* Slides */
-.mySlides {
-  display: none;
+.para {
   text-align: justify;
   color:grey;
   margin: 20px 0;
@@ -57,9 +76,8 @@ hr{
   text-align: center;
   padding: 20px;
   position :fixed;
-  top: 50%;
   width: auto;
-  margin-top: -30px;
+  margin-top: 300px;
   right:0;
   margin-left:40%;
 }
@@ -68,12 +86,12 @@ hr{
 .dot {
   cursor: pointer;
   position: relative;
-  height: 7px;
-  width: 7px;
+  height: 6px;
+  width: 6px;
   background-color: #bbb;
   border-radius: 50%;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   transition: background-color 0.6s ease;
 }
 
@@ -83,18 +101,37 @@ hr{
 }
 
 
-@media screen and (max-width: 1000px){
-
+@media screen and (max-width: 550px){
+	body{
+		background-color: #1C1334;
+		background-image: none;
+	}
+	.container{
+	width:330px;
+	margin:0;
+	}
 		.dot-container {
 	  padding: 20px;
-	  position :relative;
-	  width: auto;
+	  position :absolute;
+	  width: 300px;
 	  margin-left:0;
-	  margin-top:0;
+	  margin-top:400px;
 	}
 
 	.dot {
 		display: inline-block;
+		margin-right:5px;
+		margin-left: 5px;
 	}
 
+}
+
+@media(max-width: 345px){
+	.container{
+		width: 250px;
+	}
+
+	.dot-container{
+		margin-top:500px;
+	}
 }
