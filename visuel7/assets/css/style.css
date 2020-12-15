@@ -17,13 +17,14 @@
 
 body{
 	background-color:#2B3B3B;
+	margin:0 auto;
+	list-style: none;
 }
 
 .carousel{
 	background-image:url('../img/fond.jpg');
 	background-size: cover;
 	font-family: 'Cabrion';
-	box-shadow: 0 10px 10px 0px #283333;
 }
 
 /*Barre de navigation*/
@@ -36,20 +37,32 @@ body{
 	border-left:1px solid #373934;
 	border-right: 1px solid #373934;
 	padding:20px;
-	padding-left:1.5em;
-	padding-right: 1.5em;
+	padding-left:1.7em;
+	padding-right: 1.7em;
 	align-self: center;
 }
 
-.navbar-brand:hover{
-	opacity: 0.8;
-}
 
 .logo{
 	width:9em;
 }
 
 /*liens principaux blancs*/
+
+ul{
+	margin:0;
+	padding-top:5px;
+	padding-bottom:20px;
+}
+
+li:first-child{
+	margin-left:10%;
+}
+
+li:nth-child(3){
+	margin-left:10%;
+}
+
 .nav-link{
 	color:white !important;
 	line-height: 1em;
@@ -68,6 +81,11 @@ body{
 	margin-right: 0.8em;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	display: inline-block;
+}
+
+a{
+	text-decoration: none;
 }
 
 /*texte en gris au dessus*/
@@ -81,24 +99,26 @@ body{
 /*réseaux sociaux dans la nav*/
 
 /*images des réseaux*/
+/*section paragraphe newsletter*/
 
 .newsletter{
 	color:white;
-	font-size:0.8em;
+	font-size:0.5em;
 	font-family: "Akrobat";
 	text-transform: uppercase;
-	display:block;
-	margin-top:-9px;
-	margin-bottom:2.5em;
-}
-.rs{
-	height: 1.5em;
-	width: 1.5em;
-	float: right;
+	display: block;
+	letter-spacing: 0;
+
 }
 
-.rs:hover{
-	opacity: 0.8;
+.imagesrs{
+	margin-left:60px;
+}
+.rs{
+	height: 0.9em;
+	width: 0.9em;
+	margin-top:20px;
+	display: inline;
 }
 
 /*CAROUSEL*/
@@ -113,14 +133,21 @@ body{
 /*zone de texte du carousel*/
 
 .zonetextcarousel{
+	margin-top:-30%;
+	margin-left:15%;
 	text-align: left;
 	width: 30%;
+	color:white;
+	position:absolute;
 }
 
 .description, .textimportant{
 	font-family: 'Akrobat';
 	text-transform: uppercase;
+}
 
+.description{
+	margin-bottom:10px;
 }
 
 .textimportant{
@@ -129,16 +156,16 @@ body{
 }
 
 hr{
-	background-color: lightgrey;
+	border: 1px solid lightgrey;
 	margin:10px;
 	margin-top:-10px;
 }
+
  .learnmore{
  	background-image: url(../img/flecheorange.png);
  	background-size: 100% 100%;
  	background-repeat: no-repeat;
  	background-color: transparent;
- 	color:white;
  	border:none;
  	text-transform: uppercase;
  	padding:0.6em;
@@ -146,49 +173,106 @@ hr{
  	padding-right: 3em;
  	font-weight: bold;
  	font-size:0.9em;
- }
-
- .learnmore:hover{
- 	opacity: 0.8;
+ 	color:white;
  }
 
 /*flèches carousel*/
-.carousel-control-prev, .carousel-control-next{
-	opacity:1;
+
+.prev{
+	float:left;
+	margin-left:70px;
 }
 
-.carousel-control-prev:hover, .carousel-control-next:hover{
-	opacity:0.8;
+.next{
+	float:right;
+	margin-right:70px;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon { 
-    height: 8em; 
-    width: 3em;
-} 
-
-.carousel-control-prev-icon {
-	background-image: url("../img/flecheprev.png") !important;
+.prev, .next{
+	margin-top:-400px;
 }
 
-.carousel-control-next-icon {
-	background-image: url("../img/flechenext.png") !important;
+@media(min-width: 1810px){
+	.nav-link{
+		font-size:2em;
+	}
+
+	.logo{
+		width:16em;
+	}
 }
 
-@media (max-width: 1115px){
+@media (max-width: 1810px){
+	.nav-link{
+		font-size:1.7em;
+	}
+
+	.logo{
+		width:15em;
+	}
+}
+
+@media (max-width: 1650px){
+	.nav-link{
+		font-size:1.4em;
+	}
+
+	.logo{
+		width:13em;
+	}
+}
+
+@media (max-width: 1450px){
+	.nav-link{
+		font-size:1.2em;
+	}
+
+	.logo{
+		width:11em;
+	}
+}
+
+@media (max-width: 1320px){
+	.nav-link{
+		font-size:1em;
+	}
+
+	.logo{
+		width:9em;
+	}
+}
+
+@media(max-width: 1240px){
+	.zonetextcarousel{
+	margin-bottom:-40px;
+	}
 
 	.textimportant{
 	font-size:1.5em;
+	}	
+}
+
+@media (max-width: 1177px){
+	.nav-link{
+		font-size:0.7em;
 	}
 
-	.newsletter{
-		margin:5px;
-		margin-top:10px;
-		font-size:1.5em;
+	.logo{
+		width:7em;
 	}
-	.rs{
-		float:left;
-		height:3em;
-		width: 3em;
+
+	.n{
+		display:none;
+	}
+
+	.read{
+		font-size:0.9em;
+	}
+}
+
+@media(max-width: 900px){
+	.readmore{
+		display:none;
 	}
 }
 
@@ -206,28 +290,31 @@ hr{
 	font-size:0.9em;
 	}
 
-	.readmore{
-		display:none;
-	}
-
 	.learnmore{
 	font-size:0.6em;
 	}
-
-	.carousel-control-prev-icon, .carousel-control-next-icon { 
-    height: 5em; 
-    width: 2em;
-	} 
 }
 
-@media(max-width: 350px){
+@media(max-width: 820px){
+	.nav-link{
+		font-size:0.6em;
+	}
+
+	.logo{
+		width:5em;
+	}
+}
+
+@media(max-width: 420px){
+	.description{
+	display:none;
+	}
+}
+
+@media(max-width: 370px){
 
 	.zonetextcarousel{
 	margin-bottom:-25px;
-}
-
-	.description{
-		font-size:0.7em;
 	}
 
 	.textimportant{
@@ -245,8 +332,4 @@ hr{
 	hr{
 		display: none;
 	}
-	.carousel-control-prev-icon, .carousel-control-next-icon { 
-    height: 4em; 
-    width: 2em;
-	} 
 }
