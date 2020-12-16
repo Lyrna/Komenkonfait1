@@ -97,6 +97,43 @@ a:hover{
 
 
 /*responsive*/
+
+@media screen and (min-width: 1700px){
+	.image{
+	height:30em;
+	}
+
+	.presentation{
+		width:600px;
+	}
+
+	h1{
+		font-size:4.5em;
+	}
+
+	.description{
+		font-size:2em;
+	}
+
+	.texte{
+		font-size: 2.7em;
+	}
+
+	.numero{
+		height: 5em;
+		width: auto;
+	}
+
+	button{
+	padding-left:2.4em;
+	padding-right: 2.4em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-size:2em;
+	letter-spacing: 0.1em;
+	}
+}
+
 @media screen and (max-width: 1000px){
 	.image{
 		height:15em;
